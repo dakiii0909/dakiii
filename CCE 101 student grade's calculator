@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner= new Scanner(System.in);
+
+        System.out.print("enter student name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("enter your Grade1: ");
+        double grade1 = scanner.nextDouble();
+
+        System.out.print("enter your Grade2: ");
+        double grade2 = scanner.nextDouble();
+
+        System.out.print("enter your Grade3: ");
+        double grade3 = scanner.nextDouble();
+
+        double average = (grade1 + grade2 + grade3)/3;
+
+        
+
+        System.out.println("n/====student result=====");
+        System.out.println("student name: " + name);
+        System.out.println("average: " + average);
+
+        if(average>=75){
+            System.out.print("status: passed");
+        }
+        else{
+            System.out.print("status: failed");
+        }
+
+        
+
+        
+            
+
+        
+    }
+}
