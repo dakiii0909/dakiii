@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+
+        Scanner scanner= new Scanner(System.in);
+
+        System.out.print("enter consumer name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("consumption: ");
+        double consumption =scanner.nextDouble();
+
+        double ratePerHour = 12.0;
+        double totalBill = consumption * ratePerHour;
+        
+        double discount = 0.05;
+        if(totalBill>=2000){
+            discount = totalBill * discount;
+        }
+        else{
+            discount = 0.0;
+        }
+        
+        double finalAmount = totalBill - discount;
+
+        System.out.println("===electric bill===");
+        System.out.println("consumer name: " + name);
+        System.out.println("Consumption (kWh): " + consumption);
+        System.out.println("rate per kWh: " + ratePerHour);
+        System.out.println("total bill: " + totalBill);
+        System.out.println("discount: " + discount);
+        System.out.println("final amount: " + finalAmount);
+
+        
+
+        
+
+        
+            
+
+        
+    }
+}
