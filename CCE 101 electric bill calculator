@@ -15,7 +15,7 @@ class Main {
         double totalBill = consumption * ratePerHour;
         
         double discount = 0.05;
-        if(totalBill>=2000){
+        if(consumption>=2000){
             discount = totalBill * discount;
         }
         else{
